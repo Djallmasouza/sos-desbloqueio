@@ -52,35 +52,40 @@ export default function App() {
       title: 'Abraçar a Lama',
       desc: 'Escrever sobre o que mais te envergonha agora.',
       icon: <Sparkles className="w-6 h-6 text-purple-400" />,
-      prompt: 'O que eu não quero que ninguém saiba sobre como me sinto hoje?'
+      prompt: 'O que eu não quero que ninguém saiba sobre como me sinto hoje?',
+      placeholder: 'O que eu escondo é...'
     },
     {
       id: 'chao',
       title: 'Limpar o Chão',
       desc: 'Listar 5 medos irracionais que estão no seu caminho.',
       icon: <Trash2 className="w-6 h-6 text-emerald-400" />,
-      prompt: 'Quais são as 5 mentiras que meu medo está contando agora?'
+      prompt: 'Quais são as 5 mentiras que meu medo está contando agora?',
+      placeholder: 'Os medos que me travam são...'
     },
     {
       id: 'simbolico',
       title: 'Ato Simbólico',
       desc: 'Rasgar uma folha ou fechar os olhos por 1 minuto.',
       icon: <Wand2 className="w-6 h-6 text-gold" />,
-      prompt: 'Sinta o peso saindo. O que você escolhe soltar neste exato momento?'
+      prompt: 'Sinta o peso saindo. O que você escolhe soltar neste exato momento?',
+      placeholder: 'Eu escolho soltar...'
     },
     {
       id: 'olhar',
       title: 'O Olhar da Sombra',
       desc: 'Personificar seu travamento: que cara ele tem?',
       icon: <Eye className="w-6 h-6 text-blue-400" />,
-      prompt: 'Se o seu travamento fosse um personagem, como ele seria? O que ele diria?'
+      prompt: 'Se o seu travamento fosse um personagem, como ele seria? O que ele diria?',
+      placeholder: 'Ele seria...'
     },
     {
       id: 'carta',
       title: 'Carta ao Sabotador',
       desc: 'Diga a ele por que você vai continuar mesmo assim.',
       icon: <Mail className="w-6 h-6 text-red-400" />,
-      prompt: 'Querido Sabotador, eu entendo que você quer me proteger, mas...'
+      prompt: 'Querido Sabotador, eu entendo que você quer me proteger, mas...',
+      placeholder: 'Mesmo assim, eu vou porque...'
     }
   ];
 
@@ -290,7 +295,7 @@ export default function App() {
             <textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
-              placeholder="A verdade liberta..."
+              placeholder={selectedAction.placeholder || "A verdade liberta..."}
               className="w-full h-48 bg-white/5 border border-purple-900/50 focus:border-purple-500 rounded-2xl p-6 text-white placeholder-slate-600 focus:outline-none transition-all resize-none"
             />
 

@@ -34,7 +34,7 @@ export const FEELINGS: Record<string, Feeling> = {
 export const NEXT_ACTIONS: Action[] = [
   {
     id: 'lama',
-    title: 'Abraçar a Lama',
+    title: 'O que eu escondo é...',
     desc: 'Escrever sobre o que mais te envergonha agora.',
     icon: <Sparkles className="w-6 h-6 text-purple-400" />,
     prompt: 'O que eu não quero que ninguém saiba sobre como me sinto hoje?',
@@ -42,7 +42,7 @@ export const NEXT_ACTIONS: Action[] = [
   },
   {
     id: 'chao',
-    title: 'Limpar o Chão',
+    title: 'Os medos que me travam são...',
     desc: 'Listar 5 medos irracionais que estão no seu caminho.',
     icon: <Trash2 className="w-6 h-6 text-emerald-400" />,
     prompt: 'Quais são as 5 mentiras que meu medo está contando agora?',
@@ -50,7 +50,7 @@ export const NEXT_ACTIONS: Action[] = [
   },
   {
     id: 'simbolico',
-    title: 'Ato Simbólico',
+    title: 'Eu escolho soltar...',
     desc: 'Rasgar uma folha ou fechar os olhos por 1 minuto.',
     icon: <Wand2 className="w-6 h-6 text-gold" />,
     prompt: 'Sinta o peso saindo. O que você escolhe soltar neste exato momento?',
@@ -58,7 +58,7 @@ export const NEXT_ACTIONS: Action[] = [
   },
   {
     id: 'olhar',
-    title: 'O Olhar da Sombra',
+    title: 'Ele seria...',
     desc: 'Personificar seu travamento: que cara ele tem?',
     icon: <Eye className="w-6 h-6 text-blue-400" />,
     prompt: 'Se o seu travamento fosse um personagem, como ele seria? O que ele diria?',
@@ -66,7 +66,7 @@ export const NEXT_ACTIONS: Action[] = [
   },
   {
     id: 'carta',
-    title: 'Carta ao Sabotador',
+    title: 'Mesmo assim, eu vou porque...',
     desc: 'Diga a ele por que você vai continuar mesmo assim.',
     icon: <Mail className="w-6 h-6 text-red-400" />,
     prompt: 'Querido Sabotador, eu entendo que você quer me proteger, mas...',

@@ -35,41 +35,41 @@ export const NEXT_ACTIONS: Action[] = [
   {
     id: 'lama',
     title: 'O que eu escondo é...',
-    desc: 'Escrever sobre o que mais te envergonha agora.',
+    desc: 'Um convite para colocar em palavras algo que você ainda não disse em voz alta.',
     icon: <Sparkles className="w-6 h-6 text-purple-400" />,
-    prompt: 'O que eu não quero que ninguém saiba sobre como me sinto hoje?',
+    prompt: 'Existe algo que você gostaria de registrar agora? Escreva só o que fizer sentido pra você, no seu ritmo.',
     placeholder: 'O que eu escondo é...'
   },
   {
     id: 'chao',
     title: 'Os medos que me travam são...',
-    desc: 'Listar 5 medos irracionais que estão no seu caminho.',
+    desc: 'Nomear até 5 preocupações que estão no seu caminho agora.',
     icon: <Trash2 className="w-6 h-6 text-emerald-400" />,
-    prompt: 'Quais são as 5 mentiras que meu medo está contando agora?',
+    prompt: 'Quais são as preocupações que estão te travando agora? Escreva até 5, na ordem que vierem.',
     placeholder: 'Os medos que me travam são...'
   },
   {
     id: 'simbolico',
     title: 'Eu escolho soltar...',
-    desc: 'Rasgar uma folha ou fechar os olhos por 1 minuto.',
+    desc: 'Escrever o que está pesando agora e o que não depende só de você resolver.',
     icon: <Wand2 className="w-6 h-6 text-gold" />,
-    prompt: 'Sinta o peso saindo. O que você escolhe soltar neste exato momento?',
+    prompt: 'O que está pesando para você agora? Existe alguma parte disso que não depende de você resolver? Escreva o que gostaria de deixar de carregar neste momento.',
     placeholder: 'Eu escolho soltar...'
   },
   {
     id: 'olhar',
-    title: 'Ele seria...',
-    desc: 'Personificar seu travamento: que cara ele tem?',
+    title: 'Se minha dificuldade tivesse uma forma...',
+    desc: 'Se ajudar, você pode imaginar seu travamento como um personagem — não é obrigatório.',
     icon: <Eye className="w-6 h-6 text-blue-400" />,
-    prompt: 'Se o seu travamento fosse um personagem, como ele seria? O que ele diria?',
-    placeholder: 'Ele seria...'
+    prompt: 'Se quiser, imagine seu travamento como um personagem. Como ele seria? O que ele diria? Se preferir, descreva do seu jeito, sem personagem nenhum.',
+    placeholder: 'Minha dificuldade se parece com...'
   },
   {
     id: 'carta',
     title: 'Mesmo assim, eu vou porque...',
-    desc: 'Diga a ele por que você vai continuar mesmo assim.',
+    desc: 'Escrever um pequeno próximo passo, mesmo com a dificuldade ainda presente.',
     icon: <Mail className="w-6 h-6 text-red-400" />,
-    prompt: 'Querido Sabotador, eu entendo que você quer me proteger, mas...',
+    prompt: 'Mesmo com essa dificuldade ainda aqui, qual pequeno passo você gostaria de tentar? Você não precisa esperar ela desaparecer pra dar esse passo.',
     placeholder: 'Mesmo assim, eu vou porque...'
   }
 ];

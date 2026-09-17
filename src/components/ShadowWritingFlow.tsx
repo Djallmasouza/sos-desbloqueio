@@ -36,7 +36,7 @@ export const ShadowWritingFlow: React.FC = () => {
       {step === 1 && (
         <div className="w-full animate-in fade-in slide-in-from-bottom-4 duration-500 py-8 space-y-8">
           <div className="text-center space-y-2">
-            <h1 className="font-serif text-4xl text-[#D4AF37]">Estou Travada</h1>
+            <h1 className="font-serif text-4xl text-[#D4AF37]">Travei.</h1>
             <p className="text-slate-400 text-sm italic">O que você está sentindo agora?</p>
           </div>
 
@@ -78,7 +78,7 @@ export const ShadowWritingFlow: React.FC = () => {
             icon={<ArrowRight className="w-5 h-5" />}
             className="rounded-full px-8"
           >
-            Estou pronta — escrever 3 palavras
+            Vou escrever 3 palavras
           </Button>
         </div>
       )}
@@ -87,13 +87,19 @@ export const ShadowWritingFlow: React.FC = () => {
       {step === 3 && (
         <div className="w-full animate-in fade-in duration-500 py-8 space-y-6">
           <TextArea
-            label="Suas 3 palavras"
-            sublabel="Apenas o que vier, sem filtro."
+            label="Comece com até 3 palavras"
+            sublabel="Uma a três palavras, sem filtro."
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Digite aqui... a sombra ouve."
             wordCount={wordCount}
           />
+
+          {wordCount > 3 && (
+            <p className="text-center text-xs text-purple-400 italic">
+              Passou de 3 palavras? Tudo bem. Você pode concluir assim mesmo.
+            </p>
+          )}
 
           <Button
             disabled={wordCount < 1}
@@ -210,9 +216,9 @@ export const ShadowWritingFlow: React.FC = () => {
               Trocar Ação
             </Button>
             <Button
-              disabled={text.length < 5}
+              disabled={text.trim().length === 0}
               onClick={handleFinishWritingAction}
-              variant={text.length >= 5 ? 'gold' : 'secondary'}
+              variant={text.trim().length > 0 ? 'gold' : 'secondary'}
               className="flex-[2]"
               icon={<CheckCircle2 className="w-5 h-5" />}
             >
